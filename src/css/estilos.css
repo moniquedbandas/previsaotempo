@@ -1,13 +1,15 @@
-body{
-    background-color: #eeeeee;
+body {
+    background-color: #463d3d;
     font-family: "Red Hat Display", sans-serif;
     display: flex;
-    align-items: center; /*somente ele nao funciona, pois nao tem altura suficiente!*/
+    align-items: center;
+    /*somente ele nao funciona, pois nao tem altura suficiente!*/
     height: 100vh;
-    justify-content: center; /*alinhar horizontalmente*/
+    justify-content: center;
+    /*alinhar horizontalmente*/
 }
 
-.container{
+.container {
     background-color: #1f2949;
     color: #ffffff;
     max-width: 330px;
@@ -15,18 +17,17 @@ body{
     background-image: url("../imagens/background.png");
     background-size: cover;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 50px;    
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 50px;
 }
 
-.busca{
-    /* background-color: green; */
+.busca {
     padding: 20px;
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.busca input{
+.busca input {
     background-color: #0a1435;
     padding: 10px;
     border-radius: 5px;
@@ -38,7 +39,7 @@ body{
     opacity: 0.8;
 }
 
-.busca .btn-busca{
+.busca .btn-busca {
     background-color: #0a1435;
     cursor: pointer;
     border: none;
@@ -47,34 +48,31 @@ body{
     opacity: 0.8;
 }
 
-.busca .lupa{
+.busca .lupa {
     width: 30px;
     padding: 6px;
     opacity: 0.8;
 }
 
-.informacao-principal{
-    /* background-color: black; */
+.informacao-principal {
     margin: 30px;
 }
 
-.informacao-principal h1{
-    /* background-color: blue; */
+.informacao-principal h1 {
     font-size: 18px;
 
 }
 
-.informacao-principal .temperatura{
-    background-color: red;
+.informacao-principal .temperatura {
     font-size: 68px;
     margin: 20px 0;
 }
 
-.informacao-principal .condicao{
+.informacao-principal .condicao {
     font-size: 20px;
 }
 
-.informacao-secundaria{
+.informacao-secundaria {
     background-color: #ffffff;
     color: #000000;
     padding: 20px 10px;
@@ -83,11 +81,9 @@ body{
 }
 
 .informacao-secundaria .umidade,
-.informacao-secundaria .velocidade-do-vento{
-    /* background-color:  */
+.informacao-secundaria .velocidade-do-vento {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
-
