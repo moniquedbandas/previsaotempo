@@ -23,10 +23,10 @@ async function buscarDadosDaCidade(cidade) {
     const dados = resposta.json();
     return dados;
 }
-
 function preencherDadosNaTela(dados, cidade) {
     const temperatura = dados.current.temp_c;
     const condicao = dados.current.condition.text;
+    const horaLocal = dados.location.localtime;
     const umidade = dados.current.humidity;
     const velocidadeDoVento = dados.current.wind_kph;
     const iconeCondicao = dados.current.condition.icon;
@@ -34,6 +34,7 @@ function preencherDadosNaTela(dados, cidade) {
     document.getElementById("cidade").textContent = cidade;
     document.getElementById("temperatura").textContent = `${temperatura} ºC`;
     document.getElementById("condicao").textContent = condicao;
+    document.getElementById("hora-local").textContent = horaLocal;
     document.getElementById("umidade").textContent = `${umidade}%`;
     document.getElementById("velocidade-do-vento").textContent = `${velocidadeDoVento}km/H`;
     document.getElementById("icone-condicao").setAttribute("src", iconeCondicao);

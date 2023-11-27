@@ -80,6 +80,7 @@ body {
     border-bottom-right-radius: 15px;
 }
 
+.informacao-secundaria .hora-local,
 .informacao-secundaria .umidade,
 .informacao-secundaria .velocidade-do-vento {
     display: flex;
